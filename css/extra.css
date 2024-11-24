@@ -246,3 +246,16 @@ nav ul li.active {
     width:500px;
     margin:auto;
   }
+  .tarjeta{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    column-gap: 30px;
+    flex-flow: row;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 20px;
+    box-shadow: 5px 5px 10px gray;
+    margin-bottom: 1.5rem;
+  }
