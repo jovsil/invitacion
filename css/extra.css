@@ -185,7 +185,12 @@ nav ul li.active {
 .modal-close{font-size: 1.4em;text-transform: lowercase;padding: 0}
 
 .bg-gray{background-color: #e1e1e1;}
-.parallax-container{height: 200px!important;}
+.parallax-container{
+    height: 200px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .text-invite{
     line-height: 1;
@@ -199,6 +204,7 @@ nav ul li.active {
     position: fixed;
     top:0;
     width:100%;
+    z-index: 999;
 }
 .menu-2{
     background-color: #5d1515;
@@ -212,6 +218,12 @@ nav ul li.active {
     text-align: center;
     margin: 0;
 }
+@media all and (min-width: 0px) and (max-width: 500px){
+    .titulo-principal{font-size: 3rem;}
+    }
+    @media all and (min-width: 500px) and (max-width: 756px){
+        .titulo-principal{font-size: 4rem;}
+        }
 .tematica{
     color: #0009ff;
     animation: blinker 1s linear infinite;
