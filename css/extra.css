@@ -20,6 +20,7 @@ nav .brand-logo{font-size: 1rem;}
 .fz1--2{font-size: 1.2em;}
 .fz1--5{font-size: 1.5em;}
 .fz-2{font-size: 2em;}
+.fz-3{font-size: 3em;}
 @media all and (min-width: 0px) and (max-width: 600px){
     .fz-2{font-size: 1.4em;}
     img{padding-bottom: 1.5rem;}
@@ -87,8 +88,8 @@ nav .brand-logo{font-size: 1rem;}
 }
 
 nav.nav-center{
-    height: 100px;
-    line-height: 100px;
+    height: 50px;
+    line-height: 50px;
 }
 nav.nav-center ul {
     text-align: center;
@@ -124,6 +125,7 @@ nav.nav-center ul li a {
     background-image: url("../img/pergamino2.jpg");
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat;
 }
 .font-os-regular{font-family: 'Oswald', sans-serif,regular;}
 .open-regular{font-family: 'Open Sans', sans-serif;}
@@ -133,9 +135,21 @@ nav.nav-center ul li a {
     font-style: normal;
   } 
 .gotic{font-family: "Grenze Gotisch", serif;}
+.uncial{
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .pointer{cursor: pointer;}
 .modal{max-height: 100%;}
-
+.blue-link{
+    color:#0009ff;
+    word-break:break-all;
+    font-size: 2.5em;
+    text-decoration: underline;
+    margin: 20px 0;
+}
 .contain{object-fit: contain;}
 @media all and (min-width: 0px) and (max-width: 600px){
         .log{
@@ -197,9 +211,15 @@ nav ul li.active {
     font-family: "Grenze Gotisch", serif;
     color:#000000;
 }
-.text-invite h1,.text-invite h2{
-    color: #b6460f;
+.text-invite h1,.text-invite h3, .text-invite h2{
+    color: #c84318;
+    font-family: "Uncial Antiqua", system-ui;
+    text-shadow: 4px 1px 5px #00000042;;
 }
+.text-invite h4, .text-general{
+    color: #522020;
+}
+.fz-4{font-size: 4rem;}
 .bloque-1{
     position: fixed;
     top:0;
@@ -212,12 +232,13 @@ nav ul li.active {
     font-family: "Grenze Gotisch", serif;
 }
 .titulo-principal{
-    font-size: 7rem;
+    font-size: 6rem;
     color: #623737;
-    font-family: "Grenze Gotisch", serif;
+    font-family: "Uncial Antiqua", system-ui;
     text-align: center;
     margin: 0;
 }
+
 @media all and (min-width: 0px) and (max-width: 500px){
     .titulo-principal{font-size: 3rem;}
     }
@@ -227,6 +248,7 @@ nav ul li.active {
 .tematica{
     color: #0009ff;
     animation: blinker 1s linear infinite;
+    font-size: 3em;
 }
   
   @keyframes blinker {
@@ -235,13 +257,13 @@ nav ul li.active {
     }
   }
 
-  .p6{
-    padding-top:6rem!important;
+  .p5{
+    padding-top:5rem!important;
   }
-  .p308{
-    padding-top:308px!important;
+  .p250{
+    padding-top:250px!important;
   }
-
+.h-250{height: 250px;}
   .mapa{
     width:500px;
     margin:auto;
@@ -265,3 +287,21 @@ nav ul li.active {
         row-gap: 30px;
     }
     }
+.ro{
+    font-size: 2rem;
+    vertical-align:super;   
+}
+
+.foto{
+    height: 300px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 25px;
+    animation: dance 1s linear infinite;
+}
+@keyframes dance {
+    50% {
+        transform: scale(1.1);
+    }
+  }
