@@ -259,3 +259,9 @@ nav ul li.active {
     box-shadow: 5px 5px 10px gray;
     margin-bottom: 1.5rem;
   }
+  @media all and (min-width: 0px) and (max-width: 600px){
+    .tarjeta{
+        flex-flow: column;
+        row-gap: 30px;
+    }
+    }
