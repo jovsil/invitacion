@@ -88,7 +88,7 @@ nav .brand-logo{font-size: 1rem;}
 }
 
 nav.nav-center{
-    height: 50px;
+    height: fit-content;
     line-height: 50px;
 }
 nav.nav-center ul {
@@ -125,7 +125,7 @@ nav.nav-center ul li a {
     background-image: url("../img/pergamino2.jpg");
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 .font-os-regular{font-family: 'Oswald', sans-serif,regular;}
 .open-regular{font-family: 'Open Sans', sans-serif;}
@@ -165,6 +165,7 @@ nav.nav-center ul li a {
 
     .w-35-vw{width: 90vw;}
     .margin-5{margin:1em;}
+    h1,h2{font-size: 2rem;}
 }
 @media all and (min-width: 600px) and (max-width: 1600px){
     .w-35-vw{width: 70vw;}
@@ -212,12 +213,17 @@ nav ul li.active {
     color:#000000;
 }
 .text-invite h1,.text-invite h3, .text-invite h2{
-    color: #c84318;
+    color: #5d1515;
     font-family: "Uncial Antiqua", system-ui;
     text-shadow: 4px 1px 5px #00000042;;
 }
+.text-invite .titulos{
+    color:#652e1d;
+    font-size: 4rem;
+    font-family: "Grenze Gotisch", serif;
+}
 .text-invite h4, .text-general{
-    color: #522020;
+    color: #8d2b03;
 }
 .fz-4{font-size: 4rem;}
 .bloque-1{
@@ -240,7 +246,10 @@ nav ul li.active {
 }
 
 @media all and (min-width: 0px) and (max-width: 500px){
-    .titulo-principal{font-size: 3rem;}
+    .titulo-principal{
+        font-size: 3rem;
+        word-break: break-word;
+    }
     }
     @media all and (min-width: 500px) and (max-width: 756px){
         .titulo-principal{font-size: 4rem;}
@@ -277,18 +286,28 @@ nav ul li.active {
     background-color: #fbfbfb;
     border-radius: 10px;
     width: fit-content;
-    padding: 0 20px;
+    padding: 20px;
     box-shadow: 5px 5px 10px gray;
     margin-bottom: 1.5rem;
+  }
+  .tarjeta p{
+    margin: 0;
+    font-size: 2rem;
+  }
+  .tarjeta a{
+    border-bottom:2px solid #039be5;
+    font-size: 2rem;
+    width: fit-content;
+    margin:auto;
   }
   @media all and (min-width: 0px) and (max-width: 600px){
     .tarjeta{
         flex-flow: column;
-        row-gap: 30px;
+        row-gap: 5px;
     }
     }
 .ro{
-    font-size: 2rem;
+    font-size: 1.5rem;
     vertical-align:super;   
 }
 
@@ -305,3 +324,12 @@ nav ul li.active {
         transform: scale(1.1);
     }
   }
+  .row{
+    margin-bottom: 0!important;
+  }
+
+  #hospedaje{
+    padding-bottom:2rem;
+    scroll-margin-top: 100px;
+  }
+  #como{scroll-margin-top: 250px;}
