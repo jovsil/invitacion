@@ -130,7 +130,7 @@ nav.nav-center ul li a {
 .font-os-regular{font-family: 'Oswald', sans-serif,regular;}
 .open-regular{font-family: 'Open Sans', sans-serif;}
 .medieval-regular {
-    font-family: "MedievalSharp", cursive;
+    font-family: "MedievalSharp", cursive!important;
     font-weight: 400;
     font-style: normal;
   } 
@@ -330,6 +330,26 @@ nav ul li.active {
 
   #hospedaje{
     padding-bottom:2rem;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 250px;
   }
-  #como{scroll-margin-top: 250px;}
+  #como,#mesa{scroll-margin-top: 250px;}
+#mesa{scroll-margin-top: 100px;}
+  .mesa{position: relative;}
+  .mesa-texto{
+
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    font-size: 3rem;
+    color: #904e09;
+    height: fit-content;
+    font-family: "Grenze Gotisch", serif;
+    margin-bottom: 3rem;
+    animation: blinker1 1s linear infinite
+  }
+  .mesa img{width: 100%;}
+  @keyframes blinker1 {
+    50% {
+      opacity: .5;
+    }
+  }
